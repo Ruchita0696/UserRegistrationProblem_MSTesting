@@ -8,20 +8,26 @@ namespace UserRegistrationTesting
         [TestMethod]
         public void TestFirstname()
         {
-            UserRegistration user = new UserRegistration();
+            UserRegistrations user = new UserRegistrations();
             bool result = user.FirstNameAndLastName("Ruchita");
             Assert.IsTrue(result);
         }
         public void TestLastname()
         {
-            UserRegistration user = new UserRegistration();
+            UserRegistrations user = new UserRegistrations();
             bool result = user.FirstNameAndLastName("Ruchita");
             Assert.IsTrue(result);
         }
         public void TestEmail()
         {
-            UserRegistration user = new UserRegistration();
+            UserRegistrations user = new UserRegistrations();
             bool result = user.Email("abc.Ruchita@bl.co.net");
+            Assert.IsTrue(result);
+        }
+        public void TestMobileNumber()
+        {
+            UserRegistrations user = new UserRegistrations();
+            bool result = user.MobileNumber("+91 8097470655");
             Assert.IsTrue(result);
         }
     }

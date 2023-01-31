@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationProblem_MSTesting
 {
-    public class UserRegistration
+    public class UserRegistrations
     {
         public bool FirstNameAndLastName(string Name)
         {
@@ -20,6 +20,12 @@ namespace UserRegistrationProblem_MSTesting
         {
             Regex emailID = new Regex(@"^(abc)[a-za-Z0-9_\+\-\.]*[@](b1)*[.](co)*[.][a-z]{3}$");
             bool matches = emailID.IsMatch(email);
+            return matches;
+        }
+        public bool MobileNumber(string MobileNumber)
+        {
+            Regex number = new Regex(@"^*[+][1-9]{1,3}\s[1-9]{1}[0-9]{9}$");
+            bool matches = number.IsMatch(MobileNumber);
             return matches;
         }
     }
