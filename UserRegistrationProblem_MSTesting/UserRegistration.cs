@@ -16,5 +16,11 @@ namespace UserRegistrationProblem_MSTesting
 
             return matches;
         }
+        public bool Email(string email)
+        {
+            Regex emailID = new Regex(@"^(abc)[a-za-Z0-9_\+\-\.]*[@](b1)*[.](co)*[.][a-z]{3}$");
+            bool matches = emailID.IsMatch(email);
+            return matches;
+        }
     }
 }
