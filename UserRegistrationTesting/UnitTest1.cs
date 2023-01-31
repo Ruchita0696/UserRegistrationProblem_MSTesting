@@ -12,5 +12,11 @@ namespace UserRegistrationTesting
             bool result = user.FirstNameAndLastName("Ruchita");
             Assert.IsTrue(result);
         }
+        public void TestLastname()
+        {
+            UserRegistration user = new UserRegistration();
+            bool result = user.FirstNameAndLastName("Ruchita");
+            Assert.IsTrue(result);
+        }
     }
 }

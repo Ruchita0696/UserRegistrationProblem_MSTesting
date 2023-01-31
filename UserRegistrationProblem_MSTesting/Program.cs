@@ -7,7 +7,11 @@
             UserRegistration user = new UserRegistration();
             Console.WriteLine("Enter First Name:");
             string firstName = Console.ReadLine();
-            user.FirstNameAndLastName(firstName);
+            Console.WriteLine(user.FirstNameAndLastName(firstName));
+
+            Console.WriteLine("Enter Last Name:");
+            string lastName = Console.ReadLine();
+            Console.WriteLine(user.FirstNameAndLastName(lastName));
         }
     }
 }
