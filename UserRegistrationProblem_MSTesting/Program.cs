@@ -20,6 +20,10 @@
             Console.WriteLine("Enter MobileNumber with country code & space between them:");
             string mobilenumber = Console.ReadLine();
             Console.WriteLine(user.MobileNumber(mobilenumber));
+
+            Console.WriteLine("Enetr Password min 8 Character :");
+            string password = Console.ReadLine();
+            Console.WriteLine(user.Password(password));
         }
     }
 }

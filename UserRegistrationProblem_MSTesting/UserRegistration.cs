@@ -28,5 +28,11 @@ namespace UserRegistrationProblem_MSTesting
             bool matches = number.IsMatch(MobileNumber);
             return matches;
         }
+        public bool Password(string password)
+        {
+            Regex pass = new Regex("^[A-za-a0-9]{8,}$");
+            bool match = pass.IsMatch(password);
+            return match;
+        }
     }
 }

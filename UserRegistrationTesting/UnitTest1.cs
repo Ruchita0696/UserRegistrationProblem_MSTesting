@@ -30,5 +30,11 @@ namespace UserRegistrationTesting
             bool result = user.MobileNumber("+91 8097470655");
             Assert.IsTrue(result);
         }
+        public void TestPassword()
+        {
+            UserRegistrations users = new UserRegistrations();
+            bool result = users.Password("Ruchi06");
+            Assert.IsTrue(result);
+        }
     }
 }
