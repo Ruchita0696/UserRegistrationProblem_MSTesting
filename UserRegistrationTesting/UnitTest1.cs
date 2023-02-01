@@ -49,5 +49,11 @@ namespace UserRegistrationTesting
             bool result = user.Password("Ruchi06");
             Assert.IsTrue(result);
         }
+        public void TestPasswordOneSpecialCharacter()
+        {
+            UserRegistrations user = new UserRegistrations();
+            bool result = user.Password("Ruchi@06");
+            Assert.IsTrue(result);
+        }
     }
 }

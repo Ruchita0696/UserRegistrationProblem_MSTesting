@@ -21,6 +21,7 @@
             string mobilenumber = Console.ReadLine();
             Console.WriteLine(user.MobileNumber(mobilenumber));
 
+            //UC5 Rule 1,2,3,4
             Console.WriteLine("Enetr Password min 8 Character :");
             string password = Console.ReadLine();
             Console.WriteLine(user.Password(password));
