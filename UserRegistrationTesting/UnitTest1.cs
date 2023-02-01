@@ -43,5 +43,11 @@ namespace UserRegistrationTesting
             bool result = user.Password("ruchitA");
             Assert.IsTrue(result);
         }
+        public void TestPasswordMin1Numeric()
+        {
+            UserRegistrations user = new UserRegistrations();
+            bool result = user.Password("Ruchi06");
+            Assert.IsTrue(result);
+        }
     }
 }
