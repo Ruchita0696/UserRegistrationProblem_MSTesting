@@ -30,7 +30,7 @@ namespace UserRegistrationProblem_MSTesting
         }
         public bool Password(string password)
         {
-            Regex pass = new Regex("^[A-za-a0-9]{8,}$");
+            Regex pass = new Regex(@"^(?=.*[a-z])(?=.*[A-Z].{8,}$");
             bool match = pass.IsMatch(password);
             return match;
         }

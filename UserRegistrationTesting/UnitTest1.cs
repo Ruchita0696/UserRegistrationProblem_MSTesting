@@ -1,3 +1,4 @@
+using System.Globalization;
 using UserRegistrationProblem_MSTesting;
 
 namespace UserRegistrationTesting
@@ -34,6 +35,12 @@ namespace UserRegistrationTesting
         {
             UserRegistrations users = new UserRegistrations();
             bool result = users.Password("Ruchi06");
+            Assert.IsTrue(result);
+        }
+        public void TestPasswordMinUpperCase()
+        {
+            UserRegistrations user = new UserRegistrations();
+            bool result = user.Password("ruchitA");
             Assert.IsTrue(result);
         }
     }
