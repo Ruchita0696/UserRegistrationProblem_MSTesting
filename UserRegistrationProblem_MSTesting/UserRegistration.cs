@@ -34,5 +34,11 @@ namespace UserRegistrationProblem_MSTesting
             bool match = pass.IsMatch(password);
             return match;
         }
+        public bool SampleEmail(string emailID)
+        {
+            Regex email = new Regex(@"^(abc)([_\+\-\.]{0,1}[a-zA-Z0-9])*[@][a-z0-9]{1,} *[.][a-z]{2,}[\.\,]{0,}[a-z]{0,}$");
+            bool matches = email.IsMatch(emailID);
+            return matches;
+        }
     }
 }

@@ -25,6 +25,10 @@
             Console.WriteLine("Enetr Password min 8 Character :");
             string password = Console.ReadLine();
             Console.WriteLine(user.Password(password));
+
+            Console.Write("Enter Email Id Given in Chart : ");
+            string emailID = Console.ReadLine();
+            Console.WriteLine(user.SampleEmail(emailID));
         }
     }
 }
